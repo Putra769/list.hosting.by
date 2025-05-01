@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putra Offcial</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #444;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .product {
+            background: #1c1c1c;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        p {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header><i class="fas fa-shopping-cart"></i> Putra Offcial</header>
+
+<div class="container">
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 1GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 1.000</p>
+    <button onclick="beliProduk('Panel 1GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 2GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 2.000</p>
+    <button onclick="beliProduk('Panel 2GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 3GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 3.000</p>
+    <button onclick="beliProduk('Panel 3GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 4GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 4.000</p>
+    <button onclick="beliProduk('Panel 4GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 5GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 5.000</p>
+    <button onclick="beliProduk('Panel 5GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 6GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 6.000</p>
+    <button onclick="beliProduk('Panel 6GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 7GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 7.000</p>
+    <button onclick="beliProduk('Panel 7GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 8GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 8.000</p>
+    <button onclick="beliProduk('Panel 8GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 9GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 9.000</p>
+    <button onclick="beliProduk('Panel 9GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+      </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel 10GB</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 10.000</p>
+    <button onclick="beliProduk('Panel 10GB')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Panel Unlimited</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 11.000</p>
+    <button onclick="beliProduk('Panel Unlimited')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Reseller Panel</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 15.000</p>
+    <button onclick="beliProduk('Reseller Panel')"><i class="fab fa-whatsapp"></i>Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Admin Panel</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 25.000</p>
+    <button onclick="beliProduk('Admin Panel')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Patner Panel</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 40.000</p>
+    <button onclick="beliProduk('Patner Panel')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Owner Panel</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 50.000</p>
+    <button onclick="beliProduk('Owner Panel')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/4sq1mv.jpg" alt="Produk">
+    <h2>Install Panel</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 5.000</p>
+    <button onclick="beliProduk('Install Panel')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/ifnat5.jpg" alt="Produk">
+    <h2>Script v4</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 20.000</p>
+    <button onclick="beliProduk('Script v4')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/ifnat5.jpg" alt="Produk">
+    <h2>Script v5</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 30.000</p>
+    <button onclick="beliProduk('Script v5')"><i class="fab fa-whatsapp"></i> Beli</button>
+    </div>
+    <div class="product">
+    <img src="https://files.catbox.moe/qrb674.jpg" alt="Produk">
+    <h2>Ram2 Cpu2</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 30.000</p>
+    <button onclick="beliProduk('Ram2 Cpu2')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/qrb674.jpg" alt="Produk">
+    <h2>Ram4 Cpu2</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 40.000</p>
+    <button onclick="beliProduk('Ram4 Cpu2')"><i class="fab fa-whatsapp"></i> Beli</button>
+  </div>
+  <div class="product">
+    <img src="https://files.catbox.moe/qrb674.jpg" alt="Produk">
+    <h2>Ram8 Cpu4</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 55.000</p>
+    <button onclick="beliProduk('Ram8 Cpu4')"><i class="fab fa-whatsapp"></i> Beli</button>
+</div>
+<div class="product">
+    <img src="https://files.catbox.moe/qrb674.jpg" alt="Produk">
+    <h2>Ram16 Cpu4</h2>
+    <p class="price"><i class="fas fa-tags"></i> Rp 70.000</p>
+    <button onclick="beliProduk('Ram16 Cpu4')"><i class="fab fa-whatsapp"></i> Beli</button>
+</div>
+</div>
+
+<!-- Contact Owner dan Putra Information -->
+<div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #000000; border: 1px solid #ccc; width: 100%; box-sizing: border-box;">
+  <h3 style="margin: 0 0 10px 0; color: white;">Contact Owner</h3>
+  <a href="https://wa.me/628997463203" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <i class="fab fa-whatsapp"></i> Chat Owner
+  </a>
+</div>
+
+<div style="margin-top: 15px; padding: 20px; border-radius: 10px; background: #000000; border: 1px solid #ccc; width: 100%; box-sizing: border-box;">
+  <h3 style="margin: 0 0 10px 0; color: white;">Putra Information</h3>
+  <a href="https://whatsapp.com/channel/0029VapHsfv1iUxSZ3kIQ53b" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <i class="fas fa-bullhorn"></i> Join Channel Putra
+  </a>
+</div>
+
+<div style="margin-top: 15px; padding: 20px; border-radius: 10px; background: #000000; border: 1px solid #ccc; width: 100%; box-sizing: border-box;">
+  <h3 style="margin: 0 0 10px 0; color: white;">TestiMoni Putra</h3>
+  <a href="https://whatsapp.com/channel/0029Vb2Sa0p65yDKUdTSWk0m" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <i class="fas fa-bullhorn"></i> Join Channel Testi Putra
+  </a>
+</div>
+
+<script>
+    function beliProduk(namaProduk) {
+        window.location.href = `https://wa.me/628997463203?text=Bang%20gua%20mau%20beli%20${encodeURIComponent(namaProduk)}`;
+    }
+    function Orderbang(url) {
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
